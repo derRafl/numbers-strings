@@ -11,5 +11,6 @@ package natural
 // um den Gesamt-String einer Zahl zusammenzusetzen.
 func DigitString100(digit int) string {
 	// TODO
-	return ""
+	zahlen := []string{"", "einhundert", "zweihundert", "dreihundert", "vierhundert", "fünfhundert", "sechshundert", "siebenhundert", "achthundert", "neunhundert"}
+	return zahlen[digit]
 }
