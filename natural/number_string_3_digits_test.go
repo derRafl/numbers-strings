@@ -35,6 +35,7 @@ func ExampleNumberString3Digits() {
 	fmt.Println(NumberString3Digits(852))
 	fmt.Println(NumberString3Digits(999))
 	fmt.Println(NumberString3Digits(111))
+	fmt.Println(NumberString3Digits(103))
 
 	// Output:
 	// null
@@ -68,5 +69,7 @@ func ExampleNumberString3Digits() {
 	// einhundertdreiundsiebzig
 	// achthundertzweiundfünfzig
 	// neunhundertneunundneunzig
-	// einhundertundelf
+	// einhundertelf
+	// einhundertdrei
+
 }
