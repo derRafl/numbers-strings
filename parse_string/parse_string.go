@@ -4,5 +4,16 @@ package parse_string
 // Ist der String kein gültiger Wert, wird -1 zurückgegeben.
 func ParseString(s string) int {
 	// TODO
-	return 0
+
+	hex := false
+	for _, n := range s {
+		if ParseDigit(string(n)) > 9 {
+			hex = true
+		}
+
+		if hex {
+			return ParseStringHexadecimal(s)
+		}
+	}
+	return ParseStringDecimal(s)
 }
